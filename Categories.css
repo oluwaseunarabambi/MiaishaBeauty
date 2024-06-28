@@ -1,0 +1,52 @@
+.category-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    background-color: #dfe0e2; /* Light grey background */
+}
+
+.category-card {
+    border: 2px solid #87cfd6; /* Light blue border */
+    border-radius: 10px;
+    padding: 15px;
+    width: 200px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.category-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.category-details {
+    margin-top: 10px;
+    color: #00b9c6; /* Dark blue text */
+}
+
+.category-description {
+    font-weight: bold;
+    color: #f7009f; /* Bright pink text */
+}
+
+.category-price {
+    margin-top: 5px;
+    color: #f7bfd2; /* Light pink text */
+}
+
+.category-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #f7009f; /* Bright pink background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.category-button:hover {
+    background-color: #00b9c6; /* Dark blue background on hover */
+}

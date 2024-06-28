@@ -1,0 +1,109 @@
+/* General styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #dfe0e2; /* Light grey background */
+}
+
+.shop-container { 
+    text-align: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f7bfd2; /* Light pink background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar {
+    width: 70%;
+    padding: 10px;
+    margin: 20px 0;
+    font-size: 16px;
+    border: 1px solid #00b9c6; /* Dark blue border */
+    border-radius: 20px;
+    transition: border-color 0.3s ease;
+}
+
+.search-bar:focus {
+    border-color: #f7009f; /* Bright pink border on focus */
+    outline: none;
+}
+
+.shop-container h2 {
+    margin: 10px 0;
+    font-size: 24px;
+    color: #555;
+}
+
+.shop-container h1 {
+    margin: 10px 0;
+    font-size: 38px;
+    color: #333;
+    opacity: 1;
+}
+
+.shop-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin: 0 10px;
+    margin-left: 700px;
+    margin-top: -150px;
+}
+
+.shop-content {
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.shop-image:hover {
+    transform: scale(1.05);
+}
+
+.shop-button {
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #00b9c6; /* Dark blue background */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 30px;
+    box-shadow: 0 4px 8px rgba(224, 217, 217, 0.1);
+}
+
+.shop-button:hover {
+    background-color: #87cfd6; /* Light blue background on hover */
+    transform: scale(1.05);
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .shop-container {
+        padding: 15px;
+    }
+
+    .search-bar {
+        width: 90%;
+    }
+
+    .shop-image {
+        max-width: 200px;
+    }
+
+    .shop-button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}

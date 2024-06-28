@@ -1,0 +1,67 @@
+/* General Navbar Styling */
+.navbar {
+    background-color: #00b9c6; /* Dark blue background */
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Make the navbar full width */
+    top: 0;     
+}
+
+/* Container for the Navigation */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Logo Container and Styling */
+.logo-container .logo {
+    height: 97px;
+    width: 120px;
+}
+
+/* Navigation Links Styling */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #dfe0e2; /* Light grey text */
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.nav-link:hover {
+    background-color: #87cfd6; /* Light blue background on hover */
+    color: #f7009f; /* Bright pink text on hover */
+}
+
+/* Add a highlighted active link style */
+.nav-link.active {
+    background-color: #f7bfd2; /* Light pink background for active link */
+    color: #00b9c6; /* Dark blue text for active link */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-link {
+        width: 100%;
+        text-align: left;
+        padding: 10px 20px;
+    }
+}

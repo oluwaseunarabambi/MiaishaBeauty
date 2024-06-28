@@ -1,0 +1,79 @@
+.myaccount-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #dfe0e2;
+    text-align: center;
+}
+
+.myaccount-toggle {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.myaccount-toggle button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #87cfd6;
+    color: #fff;
+}
+
+.myaccount-toggle button.active {
+    background-color: #00b9c6;
+}
+
+.myaccount-toggle button:hover {
+    background-color: #f7bfd2;
+}
+
+.forms-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-box {
+    width: 45%;
+    display: none;
+    flex-direction: column;
+    text-align: left;
+}
+
+.form-box.show {
+    display: flex;
+}
+
+.form-box.hide {
+    display: none;
+}
+
+.login-form, .register-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form input, .register-form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-form button, .register-form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f7009f;
+    color: #fff;
+    cursor: pointer;
+}
+
+.login-form button:hover, .register-form button:hover {
+    background-color: #dfe0e2;
+    color: #333;
+}
